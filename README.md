@@ -1,3 +1,8 @@
+# PREQUESITES
+
+* docker
+* docker-compose
+
 # RUN
 
 docker-compose build && docker-compose up
