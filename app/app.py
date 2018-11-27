@@ -31,8 +31,6 @@ class ApiResource():
 			else:
 				powers.append((r - d) ** 2)
 
-		print(powers)
-		print("")
 		i = np.argmax(powers)
 		o = LINKSTATIONS[i]
 
