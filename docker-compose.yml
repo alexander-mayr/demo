@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    build: app
+    entrypoint: gunicorn app:app -b 0.0.0.0:80
+    environment:
+      - PYTHONUNBUFFERED=0
+      - LC_ALL=C.UTF-8
+      - LANG=C.UTF-8
+    ports:
+      - "80:80"
